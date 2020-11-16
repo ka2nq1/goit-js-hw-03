@@ -1,9 +1,8 @@
 function getAllPropValues(array, prop) {
     const names = [];
     for (const product of array) {
-        names.push(product[prop])
-        if (product[prop] === undefined) {
-            return [];
+        if (prop in product) {
+            names.push(product[prop])
         }
     }
     return names;

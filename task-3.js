@@ -6,7 +6,6 @@ const findBestEmployee = function (employees) {
   return key
         }
     }
-  return "";
 };
 
 const developers = {
